@@ -4,11 +4,11 @@ app = Flask(__name__)
 @app.route('/winter')
 def summer():
     return "Winter App"
-@app.route('/winter/capetown')
+@app.route('/winter/amsterdam')
 def amsterdam():
     filename = 'amsterdam-480x300.jpg'
     return send_file(filename, mimetype='image/gif')
-@app.route('/winter/keywest')
+@app.route('/winter/chicago')
 def chicago():
     filename = 'chicago-480x300.jpg'
     return send_file(filename, mimetype='image/gif')
